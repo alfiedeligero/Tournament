@@ -1,0 +1,22 @@
+#tournament_container_div{
+    display: block;
+    position: relative;
+    top: 0px;
+    text-rendering: optimizeLegibility;
+    z-index: 99999999;
+}
+#tournament_align_div{
+    pointer-events: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.tournament_align_desktop{
+    position: absolute;
+    width: 1024px;
+    height: 748px;
+    
+}

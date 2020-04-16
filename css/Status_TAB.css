@@ -1,0 +1,184 @@
+
+#status_main_container{
+    position: relative;
+    text-align: left;
+    top: 10px;
+    color: white;
+    font-weight: 100;
+}
+
+#status_leftside_container{
+    left: 35px;
+    position: absolute;
+    width: 408px;
+    height: 500px;
+    border-right: 3px solid #272727;
+}
+
+#status_rightside_container{
+    position: absolute;
+    right: 0px;
+    width: 554px;
+}
+
+#slots_div_tournament_status_gameLogo{
+    width: 200px;
+    height: 122px;
+    border: 1px solid;
+    margin-top: 30px;
+}
+
+#slots_div_tournament_status_gameLogo_image{
+    width: 100%;
+    height: 100%;
+    position: inherit;
+}
+
+#slots_div_tournament_status_timeRamaining{
+    color: #ccff00;
+    padding-top: 20px;
+}
+
+#slots_div_tournament_status_timer{
+    padding-bottom: 7px;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+#slots_div_tournament_status_timer_labelGroup{
+    font-weight: 100;
+    font-size: 10px;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+#slots_div_tournament_status_timer_label_days, #slots_div_tournament_status_timer_label_hours, #slots_div_tournament_status_timer_label_minutes{
+    padding: 0px 34px;
+}
+
+#slots_div_tournament_status_timer_label_seconds{
+    padding: 0px 30px;
+}
+
+#slots_div_tournament_status_header{
+    color: #ccff00;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+#slots_div_tournament_status_gameTitle_group{
+    margin-top: 10px;
+}  
+
+#slots_div_tournament_status_entry_group{
+    margin-top: 20px;
+}
+
+.slots_div_tournament_status_Groups{
+    margin-bottom: 10px;
+}
+
+.slots_div_tournament_status_Titles{
+    display: inline-block;
+}
+
+#slots_div_tournament_status_gameTitle_value{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.slots_div_tournament_status_Values{
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    text-align: left;
+    width: 260px;
+    /*font-style: italic;*/
+}
+
+
+#slots_div_tournament_status_leaders_div{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+}
+#slots_div_tournament_status_table_div{
+    display: flex;
+    justify-content: center;
+    width: 518px;
+    margin: 18px 20px;
+    background: #272727;
+}
+#slots_div_tournament_status_leaders{
+    padding: 10px;
+    table-layout: fixed;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+
+/*.slots_div_tournament_status_leaders_header{
+    padding: 0px 33px;
+    width: 120px;
+    background-color: #272727;
+}
+*/
+#slots_div_tournament_status_leaders_header{
+    display: block;    
+    color: #ccff00;
+}
+
+#slots_div_tournament_status_leaders_rank{
+    height: 50px;
+    width: 80px;
+}
+
+#slots_div_tournament_status_leaders_rank_value{
+    width: 80px;
+    height: 33px;
+}
+#slots_div_tournament_status_leaders_name{
+    width: 170px;
+}
+#slots_div_tournament_status_leaders_name_value{
+    width: 179px;
+}
+#slots_div_tournament_status_leaders_score{
+    width: 95px;
+} 
+
+#slots_div_tournament_status_leaders_score_value{
+    width: 100px;
+}
+#slots_div_tournament_status_leaders_prize{
+    width: 100px;
+}
+
+#slots_div_tournament_status_leaders_prize_value{
+    width: 100px;
+}
+
+#slots_div_tournament_status_leaders_body{
+    display:block;
+    overflow: auto;
+    height: 350px;
+}
+
+#slots_div_tournament_status_leaders_divider{
+    height: 30px;
+}
+
+.slots_div_tournament_status_leaders_col{
+    background-color: #1a1a1a;
+}
+.slots_div_tournament_status_leaders_col2{
+    background-color: #5b5b5b;
+}
+
+
+.slots_div_tournament_status_leaders_highlight{
+    background-color: #92cbe8;
+}

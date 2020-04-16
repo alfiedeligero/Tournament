@@ -1,0 +1,196 @@
+body {
+    
+}
+
+#game_div_main_container{
+    /*width: 1024px;
+    height: 728px;
+    background-image: url("../res/Images/Guide_game_Desktop.png");
+	background-repeat: no-repeat;*/
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: Arial;
+    font-weight: bold;
+}
+#game_div_tournament_container{
+    position: absolute;
+    left: 100px;
+    top: 0px;
+}
+#game_div_info_container{
+    position: absolute;
+    color: white;
+    font-size: 11px;
+    left: 4px;
+    top: 6px;
+    pointer-events: none;
+}
+#game_div_info_bg{
+	width: 465px;
+    height: 20px;
+    top: 0px;
+    left: 0px;
+    background-color: #111111e0;
+    position: absolute;
+    border-radius: 10px;
+}
+
+/* INFO */
+#game_div_info_content_container{
+    top: 4px;
+    left: 10px;
+    position: absolute;
+}
+/*Score*/
+#game_div_info_score_container{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    user-select: none;
+    width: 130px;
+}
+#game_div_info_score_label{
+    top: 0px;
+    left: 0px;
+    text-align: left;
+    float: left;
+    color: yellow;
+}
+#game_div_info_score_value{
+    float: left;
+    top: 0px;
+    left: 67px;
+    width: 65px;
+    text-align: left;
+    margin-left: 2px;
+}
+
+/*Round*/
+#game_div_info_round_container{
+    position: absolute;
+    top: 0px;
+    left: 132px;
+    user-select: none;
+    width: 130px;
+}
+#game_div_info_round_label{
+    top: 0px;
+    left: 0px;
+    text-align: left;
+    float: left;
+}
+#game_div_info_round_value{
+    float: left;
+    top: 0px;
+    left: 67px;
+    text-align: left;
+    margin-left: 2px;
+    color: yellow;
+}
+
+
+/*Timer*/
+#game_div_info_timer_container{
+    position: absolute;
+    top: 0px;
+    left: 269px;
+    user-select: none;
+    width: 186px;
+}
+#game_div_info_timer_label{
+    top: 0px;
+    left: 0px;
+    text-align: left;
+    float: left;
+}
+#game_div_info_timer_value{
+    float: left;
+    top: 0px;
+    left: 67px;
+    text-align: left;
+    margin-left: 2px;
+    color: yellow;
+}
+
+
+/* Tournament BTN */
+#game_div_tournament_btn{
+    position: absolute;
+    top: 0px;
+    left: 473px;
+    cursor: pointer;
+        transform-origin: top left 0px;
+    transform: scale(0.7);
+}
+#game_div_tournament_bg{
+    position: absolute;
+}
+#game_div_tournament_label{
+    position: absolute;
+    color: white;
+    font-size: 9px;
+    top: 10px;
+    left: 8px;
+    user-select: none;
+}
+
+
+
+
+/*ANIMATE CSS*/
+.game_div_new{
+    -webkit-animation:game_div_new_frames 0.5s linear 1;
+    -moz-animation:game_div_new_frames 0.5s linear 1;
+    animation:game_div_new_frames 0.5s linear 1;
+    
+    -webkit-animation-fill-mode: forwards;
+}
+@keyframes game_div_new_frames { 
+    0% { transform: translate(0px, 0px);}
+    100% { transform: translate(0px, 0px);} 
+}
+
+.game_div_initial{
+    -webkit-animation:game_div_initial_frames 0.5s linear 1;
+    -moz-animation:game_div_initial_frames 0.5s linear 1;
+    animation:game_div_initial_frames 0.5s linear 1;
+    
+    -webkit-animation-fill-mode: forwards;
+}
+@keyframes game_div_initial_frames { 
+    0% { transform: translate(0px, 0px);}
+    100% { transform: translate(0px, 0px); } 
+}
+
+/*Background*/
+.game_background_div_new{
+    -webkit-animation:game_background_div_new_frames 0.5s linear 1;
+    -moz-animation:game_background_div_new_frames 0.5s linear 1;
+    animation:game_background_div_new_frames 0.5s linear 1;
+    
+    -webkit-animation-fill-mode: forwards;
+}
+@keyframes game_background_div_new_frames { 
+    0% { opacity: 1;}
+    100% { opacity: 1;} 
+}
+
+.game_background_div_initial{
+    -webkit-animation:game_background_div_initial_frames 0.5s linear 1;
+    -moz-animation:game_background_div_initial_frames 0.5s linear 1;
+    animation:game_background_div_initial_frames 0.5s linear 1;
+    
+    -webkit-animation-fill-mode: forwards;
+}
+@keyframes game_background_div_initial_frames { 
+    0% { opacity: 1;}
+    100% { opacity: 1;} 
+}
+
+
+
+
+
+
+

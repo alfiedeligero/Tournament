@@ -1,0 +1,18 @@
+/* ----------------------------------------------------
+   created with http://www.codeandweb.com/texturepacker 
+   ----------------------------------------------------
+   $TexturePacker:SmartUpdate:bcfc1c924509018486393c736b26d73a:21e1fa6e773650d0ecaefa2317f06bfa:56ceaaf7c92007810271cab90f540f1c$
+   ----------------------------------------------------
+
+   usage: <span class="{-spritename-} sprite"></span>
+
+   replace {-spritename-} with the sprite you like to use
+
+*/
+
+.tournament_sprite_game {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(../res/Images/Blackjack_Assets.png);}
+
+.tournamentBtn_disabled {width:133px; height:55px; background-position: -407px -2px}
+.tournamentBtn_mousedown {width:133px; height:55px; background-position: -272px -2px}
+.tournamentBtn_mouseout {width:133px; height:55px; background-position: -137px -2px}
+.tournamentBtn_mouseover {width:133px; height:55px; background-position: -2px -2px}

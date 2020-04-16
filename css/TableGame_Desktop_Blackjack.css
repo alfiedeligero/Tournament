@@ -1,0 +1,191 @@
+body {
+    
+}
+
+#game_div_main_container{
+    /*width: 1024px;
+    height: 728px;
+    background-image: url("../res/Images/Guide_game_Desktop.png");
+	background-repeat: no-repeat;*/
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: Arial;
+    font-weight: bold;
+}
+#game_div_tournament_container{
+    position: absolute;
+    left: 0px;
+}
+#game_div_info_container{
+    position: absolute;
+    color: white;
+    font-size: 17px;
+    left: 4px;
+    top: 4px;
+}
+#game_div_info_bg{
+	width: 252px;
+    height: 72px;
+    top: 0px;
+    left: 0px;
+    background-color: #111111;
+    background: rgb(27,15,1);
+    background: linear-gradient(0deg, rgba(27,15,1,1) 0%, rgba(84,53,9,1) 40%, rgba(84,53,9,1) 50%, rgba(84,53,9,1) 60%, rgba(27,15,1,1) 100%);
+    position: absolute;
+    border-radius: 2px;
+}
+
+/* INFO */
+#game_div_info_content_container{
+    top: 6px;
+    left: 4px;
+    position: absolute;
+}
+/*Score*/
+#game_div_info_score_container{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    user-select: none;
+}
+#game_div_info_score_label{
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    width: 100px;
+    text-align: left;
+    /*font-size: 12px;*/
+}
+#game_div_info_score_value{
+    position: absolute;
+    top: 0px;
+    left: 102px;
+    width: 140px;
+    text-align: right;
+}
+
+/*Round*/
+#game_div_info_round_container{
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    user-select: none;
+}
+#game_div_info_round_label{
+    position: absolute;
+    top: 2px;
+    left: 1px;
+    width: 126px;
+    text-align: left;
+    /*font-size: 12px;*/
+}
+#game_div_info_round_value{
+    position: absolute;
+    top: 0px;
+    left: 102px;
+    width: 140px;
+    text-align: right;
+}
+
+
+/*Timer*/
+#game_div_info_timer_container{
+    position: absolute;
+    top: 42px;
+    left: 0px;
+    user-select: none;
+}
+#game_div_info_timer_label{
+    position: absolute;
+    top: 0px;
+    left: 2px;
+    width: 100px;
+    text-align: left;
+    /*font-size: 12px;*/
+}
+#game_div_info_timer_value{
+    position: absolute;
+    top: 0px;
+    left: 102px;
+    width: 140px;
+    text-align: right;
+}
+
+
+/* Tournament BTN */
+#game_div_tournament_btn{
+    position: absolute;
+    top: 78px;
+    left: 65px;
+    cursor: pointer;
+}
+#game_div_tournament_bg{
+    position: absolute;
+}
+#game_div_tournament_label{
+    position: absolute;
+    color: white;
+    font-size: 9px;
+    top: 10px;
+    left: 8px;
+    user-select: none;
+}
+
+
+
+
+/*ANIMATE CSS*/
+.game_div_new{
+    -webkit-animation:game_div_new_frames 0.5s linear 1;
+    -moz-animation:game_div_new_frames 0.5s linear 1;
+    animation:game_div_new_frames 0.5s linear 1;
+    
+    -webkit-animation-fill-mode: forwards;
+}
+@keyframes game_div_new_frames { 
+    0% { transform: translate(0px, 0px);}
+    100% { transform: translate(0px, 90px);} 
+}
+
+.game_div_initial{
+    -webkit-animation:game_div_initial_frames 0.5s linear 1;
+    -moz-animation:game_div_initial_frames 0.5s linear 1;
+    animation:game_div_initial_frames 0.5s linear 1;
+    
+    -webkit-animation-fill-mode: forwards;
+}
+@keyframes game_div_initial_frames { 
+    0% { transform: translate(0px, 90px);}
+    100% { transform: translate(0px, 0px); } 
+}
+
+/*Background*/
+.game_background_div_new{
+    -webkit-animation:game_background_div_new_frames 0.5s linear 1;
+    -moz-animation:game_background_div_new_frames 0.5s linear 1;
+    animation:game_background_div_new_frames 0.5s linear 1;
+    
+    -webkit-animation-fill-mode: forwards;
+}
+@keyframes game_background_div_new_frames { 
+    0% { opacity: 1;}
+    100% { opacity: 0.5;} 
+}
+
+.game_background_div_initial{
+    -webkit-animation:game_background_div_initial_frames 0.5s linear 1;
+    -moz-animation:game_background_div_initial_frames 0.5s linear 1;
+    animation:game_background_div_initial_frames 0.5s linear 1;
+    
+    -webkit-animation-fill-mode: forwards;
+}
+@keyframes game_background_div_initial_frames { 
+    0% { opacity: 0.5;}
+    100% { opacity: 1;} 
+}
+
+
+
+
+

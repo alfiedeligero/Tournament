@@ -1,0 +1,225 @@
+ 
+
+#details_main_container, #help_main_container{
+    position: relative;
+    text-align: left;
+    top: 10px;
+    color: white;
+}
+
+
+
+#Tournamnet_Expand_Wrapper{
+    display: inline-block;
+    position: absolute;
+    top: 45px;
+    width:1000px;
+    height:560px;
+    background:#000;
+}
+
+#Tournamnet_Collapse_Wrapper{
+    display: inline-block;
+    position: absolute;
+    width:55px;
+    height:100%;
+    background:#000;
+}
+/********CUSTOM**********/
+/*THEME*/
+#Tournamnet_Canvas{
+    position: absolute;
+    display: block;
+    width: 512px;
+    height: 100%;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    font-family: "Arial";
+    font-weight: bold;
+    /*    margin-left:auto;
+    margin-right:auto;   */
+}
+.content_container{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: #404040;
+    border-radius: 0 10px 10px 0px;
+    margin-top: -2px;
+}
+.expandTab_container{
+    /*position: absolute;*/
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: #2b2b2b;
+     
+}
+.navExpanded_Tab{
+    display: inline-block;
+    padding: 15px 25px;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    border-right: 2px solid #000;
+}
+.active{
+    display: inline-block;
+    padding: 15px 25px;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.collapse_BTN{
+    display: inline-block;
+    padding: 15px 25px;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    float: right;
+    cursor: pointer;
+}
+
+
+.helpContent{
+   display: block;
+    padding: 16px 45px;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    top: 75px;
+    position: absolute;
+    font-size: 25px;
+}
+.prizeListing{
+    display: flex;
+    justify-content: center;
+}
+
+.prizeListingTable{
+    /*display: block;*/
+    padding: 15px 20px;
+    table-layout: fixed;
+    background: #282628;
+}
+.prizeListingTableHead{
+    /*padding: 0px 33px;*/
+    width: 225px;
+    color:#ccff00;
+}
+.prizeListingTableHeadTR{
+    display: block;
+}
+.prizeListingTableBody{
+    display: block;
+    overflow: auto;
+    max-height: 420px
+}
+.prizeListingTableBodyItems{
+    width: 225px;
+    padding: 5px;
+}
+
+.navExpanded_Tab:hover{
+    background: #fff;
+    color: #7c7c7c;
+}
+/*chester*/
+.navExpanded_Tab_active{
+    background: #404040;
+    color: #00e7ef;
+}
+
+.collapse_BTN:hover{
+    background: #fff;
+    color:#000;
+}
+
+
+/*ANIMATE CSS*/
+.slot_div_hide{
+    -webkit-animation:slot_div_hide_frames 1s linear 1;
+    -moz-animation:slot_div_hide_frames 1s linear 1;
+    animation:slot_div_hide_frames 1s linear 1;
+    
+    -webkit-animation-fill-mode: forwards;
+}
+@keyframes slot_div_hide_frames { 
+    0% { transform: translate(0px, 0px);}
+    100% { transform: translate(-457px, 0px);} 
+}
+
+.slot_div_show{
+    -webkit-animation:slot_div_show_frames 1s linear 1;
+    -moz-animation:slot_div_show_frames 1s linear 1;
+    animation:slot_div_show_frames 1s linear 1;
+    
+    -webkit-animation-fill-mode: forwards;
+}
+@keyframes slot_div_show_frames { 
+    0% { transform: translate(-457px, 0px);}
+    100% { transform: translate(0px, 0px); } 
+}
+
+.details_leftside_container {
+    left: 35px;
+    position: absolute;
+    width: 408px;
+    height: 500px;
+    border-right: 3px solid #272727;
+    font-weight: 100;
+}
+.details_rightside_container {
+   left: 444px;
+   position: absolute;
+   width: 555px;
+   height: 500px;
+   text-align: center;
+}
+
+
+.tournamentName{
+    font-size: 18px;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px 0px;
+    color: #ccff00;
+    width: 100%;
+}
+
+.details_content{
+    display: block;
+    padding: 5px 0px;
+    color: #fff;
+    width: 100%;
+}
+
+.gameLogoContainer{
+    display: block;
+    padding: 0px 0px;
+    color: #000;
+    width: 100%;
+        margin-top: 30px;
+}
+.gameLogo{
+   display: block;
+   justify-content: center;
+   text-align: center;
+   color: #000;
+   width: 200px;
+
+}
+.gameLogo img{
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+    border: 1px solid #fff;
+    /*background-image:url(../res/Images/Slots_Assets.png);*/
+    /*background-repeat: no-repeat;*/
+
+}
+
+
