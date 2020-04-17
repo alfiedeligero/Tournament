@@ -481,7 +481,7 @@ void 0===c?d&&"get"in d&&null!==(e=d.get(a,b))?e:(e=n.find.attr(a,b),null==e?voi
             _params += '&playMode=' + playMode;
             _params += '&tournamentPath=' + '<?php echo isset($loadData['tournamentPath']) ? $loadData['tournamentPath'] : ''; ?>';
             _params += '&tournamentAssetPath=' + '<?php echo isset($loadData['tournamentAssetPath']) ? $loadData['tournamentAssetPath'] : ''; ?>';
-            
+            _params += '&gameId=' + gameID;
             gameDiv = document.createElement('div');
             gameDiv.id = 'gameDiv';
             document.getElementsByTagName('body')[0].appendChild(gameDiv);

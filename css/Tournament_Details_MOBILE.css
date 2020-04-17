@@ -12,10 +12,9 @@
 #Tournamnet_Expand_Wrapper{
     display: inline-block;
     position: absolute;
-    top: 45px;
-    width:1000px;
-    height:560px;
-    background:#000;
+    width: 640px;
+    height: 360px;
+    background: #000;
 }
 
 #Tournamnet_Collapse_Wrapper{
@@ -85,30 +84,31 @@
 
 
 .helpContent{
- display: block;
- padding: 16px 45px;
- justify-content: center;
- text-align: center;
- color: #fff;
- top: 75px;
- position: absolute;
- font-size: 25px;
+   display: block;
+   padding: 16px 45px;
+   justify-content: center;
+   text-align: center;
+   color: #fff;
+   position: absolute;
+   font-size: 18px;
 }
 .prizeListing{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin: auto;
+    font-size: 12px;
+    width: 300px;
 }
 
 .prizeListingTable{
-    /*display: block;*/
-    padding: 15px 20px;
-    table-layout: fixed;
-    background: #282628;
+ /* display: block; */
+ padding: 12px 15px;
+ table-layout: fixed;
+ background: #282628;
 }
 .prizeListingTableHead{
     /*padding: 0px 33px;*/
-    width: 225px;
+    width: 122px;
     color:#ccff00;
 }
 .prizeListingTableHeadTR{
@@ -117,10 +117,10 @@
 .prizeListingTableBody{
     display: block;
     overflow: auto;
-    max-height: 420px
+    max-height: 190px
 }
 .prizeListingTableBodyItems{
-    width: 225px;
+    width: 122px;
     padding: 5px;
 }
 
@@ -166,19 +166,19 @@
 }
 
 .details_leftside_container {
-    left: 35px;
+    left: 20px;
     position: absolute;
-    width: 408px;
-    height: 500px;
+    width: 270px;
+    height: 284px;
     border-right: 3px solid #272727;
     font-weight: 100;
 }
 .details_rightside_container {
-   left: 444px;
-   position: absolute;
-   width: 555px;
-   height: 500px;
-   text-align: center;
+ left: 305px;
+ position: absolute;
+ width: 334px;
+ height: 284px;
+ text-align: center;
 }
 
 
@@ -188,12 +188,12 @@
     padding: 10px 0px;
     color: #ccff00;
     width: 100%;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 600;
 }
 
 .prizes{
-    margin-top: 30px;
+    margin-top: 15px;
     display: block;
     padding: 5px 0px;
     color: #fff;
@@ -204,6 +204,7 @@
     padding: 5px 0px;
     color: #fff;
     width: 100%;
+    font-size: 12px;
 }
 
 .details_Label{
@@ -214,7 +215,7 @@
     position: absolute;
     right: 0px;
     text-align: left;
-    width: 260px;
+    width: 160px;
 }
 .tiesHelp{
     display: none;
@@ -228,14 +229,15 @@
     border: 2px solid;
 }
 .infoBtn{
-   display: inline-block;
-   position: absolute;
-   right: 130px;
-   text-align: left;
-   width: 22px;
-   height: 22px;
-   background-repeat: no-repeat;
-   cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    right: 60px;
+    text-align: left;
+    width: 22px;
+    height: 22px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    top: 213px;
 }
 
 .gameLogoContainer{
@@ -243,14 +245,14 @@
     padding: 0px 0px;
     color: #000;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 .gameLogo{
-   display: block;
-   justify-content: center;
-   text-align: center;
-   color: #000;
-   width: 200px;
+ display: block;
+ justify-content: center;
+ text-align: center;
+ color: #000;
+ width: 100px;
 
 }
 .gameLogo img{

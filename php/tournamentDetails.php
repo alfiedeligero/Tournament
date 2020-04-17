@@ -38,8 +38,13 @@ define( "END", "Ends: ");
 define( "TIMELIMIT", "Time Limit: ");
 define( "MAXROUNDS", "Maximum rounds: ");
 define( "TIES", "Ties: ");
+define( "PRIZESPLITTING", "Prize Splitting");
 define( "ENTRIESPERCOSTUMER", "Entries per costumer: ");
 define( "MAXENTRIES", "Maximum entries: ");
+define( "TIESHELP", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum velit et ante posuere, sed posuere leo commodo.");
+
+
+define("GAMELOGO_PATH", "res/Images/Logo/");
 
 
 define("GAME_LOGO", "http://staging0.apsgrp.com/common/Launcher_Data/images/icons/755_SpeedDemons/icon1.png");
@@ -82,6 +87,7 @@ define("GameName_99755", "Speed Demons");
     var _gameID;
     var _contestData;
     var _logoPath;
+    var _logoName;
     // var TournamentGameValues;
     
     
@@ -153,9 +159,12 @@ define("GameName_99755", "Speed Demons");
             // console.log('TOURNAMENT DETAILS UPDATE:',_params);
             switch(_params.type){
                 case 'GameInfo':
-                    console.log('DETAILS INFO',_params);
+                    console.log('DETAILS INFO',_params, _assetSize);
                     gameInfoData = _params.data;
                     _assetSize = _params.assetSize;
+
+                    loadTournamentCss(this.tournametAssetsPath + 'css/Tournament_Details_' + _assetSize +'.css');
+                    loadTournamentCss(this.tournametAssetsPath + 'css/Status_TAB_' + _assetSize +'.css');
                     break;
                 case 'EOS':
                     console.log('DETAILS EOS',_params);
@@ -168,11 +177,11 @@ define("GameName_99755", "Speed Demons");
                     _gameID = _params.data.contest.gameID;
                     _contestData = _params.data;
                     init_Status();
-                    init_Details();
+                    init_Details(this.tournametAssetsPath);
                     init_Help();
 
                     
-                    TournamentDetailsValue(_params.data);
+                    
                     break;
                 case 'DEFAULT':
                     console.log('DEFAULT',_params);
@@ -240,8 +249,14 @@ define("GameName_99755", "Speed Demons");
 
                     console.log('SHOW_TOURNAMENT_DETAILS',_params, gameInfoData);
 
-                    _logoPath = _this.tournametAssetsPath + "res/Images/Logo/" + _assetSize + "/" + _gameID + ".png";
+                    _logoPath = _this.tournametAssetsPath + "<?php echo GAMELOGO_PATH ?>" +  "GAMELOGO_" + _gameID + ".png";
+                    _logoName = "<?php echo constant('GameName_'. $_GET['gameId']); ?>";
+
+                    console.log('--------------------', _logoName);
+                    // debugger;
+                    // _this.tournametAssetsPath + "res/Images/Logo/" + _assetSize + "/" + _gameID + ".png";
                     TournamentStatusValue(_contestData, gameInfoData);
+                    TournamentDetailsValue(_contestData,gameInfoData);
 
                     document.getElementById("tournament_container_div").style.position = 'static';
                     collapse_wrapper_container.style.display = 'none';
@@ -302,8 +317,8 @@ define("GameName_99755", "Speed Demons");
                 }
             }
             this.tournametAssetsPath = decodeURIComponent(this.gameParams.tournamentAssetPath);
-            loadTournamentCss(this.tournametAssetsPath + 'css/Tournament_Details.css');
-            loadTournamentCss(this.tournametAssetsPath + 'css/Status_TAB.css');
+            
+
             console.log('+++++++++++++++INIT+++++++++++++++')
             this.update({type:'DEFAULT'});
         }

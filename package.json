@@ -1,0 +1,71 @@
+{
+  "name": "topbetwebapp",
+  "version": "1.0.0",
+  "description": "WebApp for TopBet",
+  "private": true,
+  "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "dev": "webpack --config webpack.dev.js",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.apsgrp.com/apollo.pacifica/TopBetWebAPp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.1",
+    "flag-icon-css": "^3.4.6",
+    "iframe-resizer": "^4.2.8",
+    "jquery": "^3.4.0",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.23",
+    "postcss-scss": "^2.0.0",
+    "sass": "^1.23.7",
+    "vue": "^2.6.10",
+    "vue-localstorage": "^0.6.2",
+    "vue-moment": "^4.0.0",
+    "vuex": "^3.1.0",
+    "watch": "^1.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2016": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "bootstrap": "^3.4.1",
+    "clean-webpack-plugin": "^1.0.1",
+    "cross-env": "^5.2.1",
+    "css-loader": "^0.28.11",
+    "cssnano": "^4.1.10",
+    "expose-loader": "^0.7.5",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "imports-loader": "^0.8.0",
+    "mini-css-extract-plugin": "^0.4.5",
+    "postcss-loader": "^3.0.0",
+    "raw-loader": "^4.0.0",
+    "script-loader": "^0.7.2",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.3.0",
+    "vue-loader": "^15.7.0",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1",
+    "webpack-merge": "^4.2.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

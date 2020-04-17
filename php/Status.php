@@ -70,7 +70,8 @@
 			}
 
 			slots_div_tournament_status_gameTitle.innerHTML = "<?php echo GAME ?>"; 
-			slots_div_tournament_status_gameTitle_value.innerHTML = "<?php echo GameName_99755 ?>"; 
+
+			slots_div_tournament_status_gameTitle_value.innerHTML = _logoName; 
 			status_leftside_container.appendChild(slots_div_tournament_status_gameTitle_group);
 			
 			if(_params.contest.leaderboard.entry.playerName){
@@ -148,10 +149,6 @@
 	                        // remainingTime[0] = "00";
 	                        // remainingTime[1] = "00";
 	                    }
-	                    
-	                    
-
-                        console.log(remainingTime);
 
 						slots_div_tournament_status_timer_label_seconds.innerHTML = "<?php echo SECONDS ?>";
 						slots_div_tournament_status_timer_label_seconds.style.display = "block";
@@ -168,13 +165,19 @@
 						}else{
 							remainingTime.shift();
 						}
+						console.log(remainingTime);
 
 						for (var a = 0; a < remainingTime.length; a++) {
+							var _string = "";
 	                    	if(a == remainingTime.length - 1){
-	                    		timeToDisplay = timeToDisplay + remainingTime[a];
+	                    		_string = "";
+	                    	}else if(a == 0 && remainingTime.length == 4){
+	                    		_string = " ";
 	                    	}else{
-	                    		timeToDisplay = timeToDisplay + remainingTime[a] + ":";
+	                    		_string = ":";
 	                    	}
+
+	                    	timeToDisplay = timeToDisplay + remainingTime[a] + _string;
 	                    }
 
 	                    slots_div_tournament_status_timer.innerHTML = timeToDisplay;
