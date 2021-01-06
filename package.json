@@ -15,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "flag-icon-css": "^3.4.6",
     "iframe-resizer": "^4.2.8",
     "jquery": "^3.4.0",
